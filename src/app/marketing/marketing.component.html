@@ -1,18 +1,22 @@
 <div class="container">
-
+<div class="page-header">
+    <h1>Non-responsive Bootstrap</h1>
+    <p class="lead">Disable the responsiveness of Bootstrap by fixing the width of the container and using the first grid system tier. <a href="../../getting-started/#disable-responsive">Read the documentation</a> for more information.</p>
+  </div>
+  <h3>What changes</h3>
+  <div class="row">
+    <div class="col-xs-4">One third</div>
+    <div class="col-xs-4">One third</div>
+    <div class="col-xs-4">One third</div>
+  </div>
   <input type="text" (keyup.enter)="createPost(title.value)" #title class="form-control">
-
   <ul class="list-group">
     <li class="list-group-item" *ngFor="let post of posts">
-      
       <button class="btn btn-primary" (click)="updatePost(post)">Update</button>
       ||
       <button class="btn btn-danger" (click)="deletePost(post)">Delete</button>
-
       {{post.title}}
-
     </li>
-
   </ul>
 </div>
 

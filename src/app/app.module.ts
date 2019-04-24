@@ -15,7 +15,6 @@ import { DbService } from './dbService/db.service';
 import { HttpClientModule } from '@angular/common/http';
 
 import { PostService } from './services/post.service';
-import { DataService } from './services/data-service';
 
 @NgModule({
   declarations: [
@@ -35,7 +34,7 @@ import { DataService } from './services/data-service';
     HttpClientModule
   ],
 
-  providers: [ProductsService, DbService, PostService, DataService],
+  providers: [ProductsService, DbService, PostService],
 
   bootstrap: [AppComponent]
 })
