@@ -12,8 +12,6 @@ import { PostService } from '../services/post.service';
 })
 export class MarketingComponent implements OnInit {
   posts: any;
-  
-  title = "mostafa";
 
   constructor(private service: PostService) {}
   ngOnInit() {
